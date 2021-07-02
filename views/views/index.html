@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body> 
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card-body">
+          <header class="card-header">
+            <h4 class="card-title">Register Car Washer</h4>
+          </header>
+        </div>
+      </div>
+    </div>
+    <form method="POST" action="/register">
+      <div class="form-row">
+        <div class="col form-group">
+          <label>First name </label>
+          <input class="form-control" name="firstname">
+        </div>
+      </div>
+      <div class="col form-group">
+        <label>Last name</label>
+        <input class="form-control" name="lastname">
+      </div>
+      <div class="col form-group">
+        <label>User name</label>
+        <input class="form-control" name="username">
+      </div>
+      <div class="form-row">
+        <div class="col form-group"></div>
+        <label>Gender</label>
+      </div>
+      <div> 
+        <label class="form-check form-check-inline"> 
+          <input class="form-check-input" type="radio" name="gender" value="female"><span class="form-check-label">Female </span>
+        </label>
+        <label class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" value="male"><span class="form-check-label">Male                     </span>
+        </label>
+      </div>
+    </form>
+  </body>
+</html>
