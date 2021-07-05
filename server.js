@@ -14,14 +14,25 @@ app.set('views', './views');
 //middleware
 //handles reading of data from the <form> element
 app.use(express.urlencoded({extended: true}));
-
-
-
+// app.use('/index',()=>{
+//   console.log('someone just went to index')
+// });
+// app.use(express.static(path.join(__dirname, 'public')));
 
 //routes
 app.get('/index',(req,res)=>{
   res.render('index', {title:"ZaCar Wash register", message:"this is how we pug",heading:"learning pug from scratch"})
 });
+//home route
+app.get('/home',(req,res)=>{
+  res.render('home')
+});
+//washerroute
+app.get('/washers',(req,res)=>{
+  res.render('washer')
+});
+
+
 
 app.post('/index', (req,res)=>{
   console.log(req.body)
@@ -40,13 +51,6 @@ app.get('*', (req, res)=> {
 
 
 
-
-
-
-
-
-
-  //server
 app.get('/', (req, res) => res.send('Hello World!'));
 
 

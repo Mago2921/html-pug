@@ -1,0 +1,38 @@
+body{
+    color: black;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+
+.reg{
+    width: 800px;
+    background-color: rbg(0,0,0,0.6);
+    margin: auto;
+    color:black;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+.main{
+background-color: rbg(0,0,0,0.5);
+width: 800px;
+margin: auto;
+}
+
+.form{
+padding: 10px;
+margin-left: 150px;
+background-color: cornflowerblue;
+text-align: center;
+border-radius: 5px;
+
+}
+
+.submit{
+    margin-top: 30px;
+}
+
+
+

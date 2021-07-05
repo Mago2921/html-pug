@@ -1,32 +1,37 @@
 doctype html
-html 
-    head
-        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
-        title= title
-    body 
-        div.row.justify-content-center
-            div.col-md-6
-                div.card-body
-                    header.card-header
-                        h4.card-title Register Car Washer
-        form(method="POST" action='/register')
-                        div.form-row
-                            div.col.form-group
-                                label First name 
-                                input.form-control(name="firstname")
-                        div.col.form-group
-                                label Last name
-                                input.form-control(name="lastname")
-                        div.col.form-group
-                                label User name
-                                input.form-control(name="username") 
-                        div.form-row
-                                div.col.form-group
-                                label Gender
-                        div 
-                                    label.form-check.form-check-inline  
-                                        input.form-check-input(type="radio" name="gender" value="female")
-                                        span.form-check-label Female 
-                                    label.form-check.form-check-inline
-                                        input.form-check-input(type="radio" name="gender" value="male")
-                                        span.form-check-label Male                     
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Za wash Registry
+  link(rel='D:\Projects\zawash-final\public\style.css' href='D:\Projects\zawash-final\public\style.css' type='text/css')
+.reg
+  h1 Car Wash Registry
+.main
+  form.form(action='')
+    #top
+      h1 Washers Name
+      input.first-name(type='text' name='firstname' placeholder='First Name')
+      label.first-label(for='')
+      input.last-name(type='text' name='lastname' placeholder='Last Name')
+      label.last-label(for='')
+      h2 Customers Phone Number
+      input.phone(type='text' name='pname' placeholder='+256')
+      form(method='post' action='')
+        legend Choose your gender:
+        label(for='male') Male
+        input#male(type='radio' name='gender' value='male')
+        label(for='female') Female
+        input#female(type='radio' name='gender' value='female')
+    h2.numberplate Car Regestration
+    input.car-reg(type='text' name='reg1' placeholder='Number Plate')
+    h2.package Package Selected
+    form(action='')
+      label(for='cars') Customer Selected
+      select#choices(name='options')
+        option(value='small') Small Cars
+        option(value='medium') Medium Cars
+        option(value='full-body') Full Body 
+        option(value='boda') Boda boda
+      .submit
+        input(type='submit')
